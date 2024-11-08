@@ -33,6 +33,11 @@
     text-align: center;
 }
 
+.main-right a{
+    text-decoration: none;
+    color: black;
+}
+
 .main-right img{
     float: left;
     width: 95%;
@@ -53,4 +58,119 @@
     float: left;
     width: 20%;
     height: 220px;
+}
+
+.volunteer-div{
+    float: left;
+    width: 100%;
+    margin: 5% 0% 6% 0%;
+}
+
+.volunteer-left{
+    float: left;
+    width: 25%;
+    margin: 0% 0% 0% 15%;
+}
+
+.volunteer-left img{
+    float: left;
+    width: 100%;
+    height: 550px;
+}
+
+.volunteer-right{
+    float: left;
+    width: 30%;
+    margin: 0% 0% 0% 8%;
+}
+
+.volunteer-right h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 400;
+}
+
+.volunteer-right p{
+    font-size: 25px;
+}
+
+#adm{
+    text-align: center;
+}
+
+.details-div{
+    float: left;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.762);
+    padding: 2% 0% 2% 0%;
+}
+
+.sub-details{
+    float: left;
+    width: 20%;
+    border: 3px solid aliceblue;
+    color: aliceblue;
+    margin: 0% 0% 0% 10%;
+    height: 250px;
+    text-align: center;
+}
+
+.sub-details h1{
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.sub-details p{
+    font-size: 20px;
+    text-align: start;
+    margin: 0% 0% 0% 8%;
+}
+
+.sub-details input, .sub-details select{
+    float: left;
+    width: 90%;
+    font-size: 22px;
+    background-color: transparent;
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    margin: 5% 0% 0% 4%;
+}
+
+.sub-details option{
+    background-color: black;
+}
+
+.sub-details button{
+    float: left;
+    width: 50%;
+    font-size: 22px;
+    margin: 4% 0% 0% 4%;
+}
+
+.footer-div{
+    float: left;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+
+.crud-div{
+    float: left;
+    width: 40%;
+    border: 4px solid black;
+    margin: 10% 0% 0% 30%;
+}
+
+.crud-div a{
+    float: left;
+    width: 40%;
+    border: 3px solid black;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2% 0% 2% 6%;
+    text-decoration: none;
+    color: black;
+
 }
