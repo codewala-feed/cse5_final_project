@@ -38,6 +38,11 @@
     color: black;
 }
 
+.main-right h1:hover{
+    transition: 1.5s;
+    color: olive;
+}
+
 .main-right img{
     float: left;
     width: 95%;
@@ -204,4 +209,25 @@
     border: 8px solid black;
     margin: 0% 0% 0% 1%;
     height: 500px;
+}
+
+.output-div{
+    float: left;
+    width: 70%;
+    margin: 10% 0% 0% 15%;
+}
+
+.output-div table{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.output-div thead{
+    font-size: 30px;
+    background-color: antiquewhite;
+}
+
+.output-div tbody{
+    font-size: 25px;
 }

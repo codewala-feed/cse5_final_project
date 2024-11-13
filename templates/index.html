@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="banner-div">
@@ -59,8 +60,8 @@
         </div>
         <div class="sub-details">
             <form action="/callme" method="post">
-                <input type="text" required placeholder="name" name="name">
-                <input type="email" required placeholder="email" name="email">
+                <input id="inp1" onmouseenter="onShadow()" onmouseleave="offShadow()" type="text" required placeholder="name" name="name">
+                <input id="inp2" type="email" required placeholder="email" name="email">
                 <input type="number" required placeholder="number" name="number">
                 <select name="course" required>
                     <option value="" disabled selected>select course</option>
@@ -84,6 +85,6 @@
     <div class="footer-div">
         <p>Copyright © 2024 || All Rights Reserved || Developed By NIKHIL-POKURI</p>
     </div>
-
+    <script src="../static/js/style.js"></script>
 </body>
 </html>

@@ -57,7 +57,9 @@ def register():
 
 @app.route("/view", methods=["GET"])
 def view():
-    return render_template("view.html")
+    data = students.find()
+    # print(list(data))
+    return render_template("view.html", response = list(data))
 
 @app.route("/update", methods=["GET", "POST"])
 def update():
@@ -65,7 +67,11 @@ def update():
        _id = request.form["id"]
        new_field = request.form["new_field"]
        new_value = request.form["new_value"]
-       return "Data Updated "
+       print(_id, new_field, new_value)
+       students.update_one(
+           {"id":_id}, {"$set":{new_field:new_value}}
+       )
+       return redirect("/update")
     else:
         return render_template("update.html")
 
@@ -73,7 +79,8 @@ def update():
 def delete():
     if request.method == "POST":
         _id = request.form["id"]
-        return "Data Deleted"
+        students.delete_one({"id":_id})
+        return redirect("/delete")
     else:
         return render_template("delete.html")
 
